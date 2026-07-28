@@ -1,0 +1,85 @@
+{
+  "skill_name": "blog-post-optimization",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here's a 2,000-word blog post that's just paragraph after paragraph after paragraph with one table in the middle. It reads fine but feels flat and doesn't rank. How do I improve it?",
+      "expected_output": "Should audit the post's shape and identify the flat prose structure as the core issue. Should recommend intent-driven rich content blocks (quick-answer/TL;DR, checklist, pros/cons, comparison table, key takeaways) chosen by query intent, not as a quota. Should state the CORRECT mechanism: variety is not a direct ranking signal — it helps via engagement signals (dwell, scroll depth, reduced pogo-sticking) and SERP-feature eligibility (featured snippets, PAA). Should warn against block-stuffing. Should apply the cadence guideline (~one non-prose element per 400-600px of scroll). Should NOT rewrite the article's copy or change its meaning.",
+      "assertions": [
+        "Diagnoses the flat paragraph-only structure",
+        "Recommends specific intent-driven content blocks",
+        "States the correct mechanism (engagement + SERP features, not 'variety' as a ranking signal)",
+        "Warns against block-stuffing / adding blocks for their own sake",
+        "Applies the ~400-600px cadence guideline",
+        "Does not rewrite the article copy"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "How do I add expertise/E-E-A-T to my cabinet-pricing guide? Someone suggested a callout like 'In our experience pricing 2,000+ layouts...'",
+      "expected_output": "Should confirm E-E-A-T is valid but correct the framing: it is a quality-rater framework, not a direct algorithm signal, and Trust is the dominant component. Should stress the non-negotiable rule that experience claims must be TRUE — the '2,000+ layouts' line is only usable if the business has actually done it. Should prioritize concrete signals: a real named author (not admin/anonymous) wired into byline + bio + Article schema author, first-hand specifics over generic claims, real photography over placeholders, visible publish/updated dates, and Organization/WebSite schema. Should flag that a missing/zero author on the page is the highest-leverage gap. Should not fabricate credentials or experience.",
+      "assertions": [
+        "Confirms E-E-A-T validity but corrects it to a rater framework, not a direct signal",
+        "Notes Trust is the dominant component",
+        "Insists experience claims must be truthful",
+        "Prioritizes a real named author + bio + Article schema author",
+        "Recommends real photos, specifics, dates, Organization schema",
+        "Refuses to fabricate experience or credentials"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want to add an FAQ section with FAQ schema to my article so I get those expandable FAQ results in Google. Good idea?",
+      "expected_output": "Should flag that FAQ rich results were restricted (Aug 2023) to authoritative government and health sites, so normal sites no longer get the expandable FAQ rich card from FAQ schema. Should clarify FAQ CONTENT still helps users and People Also Ask, so it can be worth adding for those reasons — just not for the rich card. Should tell the user to verify the current status (feature availability changes) rather than asserting it as permanent. Should redirect energy toward live wins: a quick-answer paragraph, lists, and tables for featured snippets. Should reference the schema skill for implementation.",
+      "assertions": [
+        "States FAQ rich results are deprecated for normal sites (2023)",
+        "Distinguishes FAQ content value (users/PAA) from the dead rich card",
+        "Advises verifying current SERP-feature status rather than asserting permanence",
+        "Redirects to live featured-snippet targeting",
+        "References the schema skill for structured-data implementation"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "The body text on my long guide feels cramped and hard to read. Body is 16px, line-height 1.5, the column is ~900px wide, and H2s sit right on top of the paragraph below them. Give me concrete CSS.",
+      "expected_output": "Should apply the long-form readability spec with concrete values: body 18-19px / line-height 1.7-1.85 / paragraph spacing 28-32px; cap prose measure at ~66-75 characters (max-width ~68-72ch) while letting images/tables use the full column; reduce the reading column toward ~700-740px. Should diagnose the heading collision as the margin-collapse trap and fix it with more space above than below (e.g. h2 margin 64-80px top / 12-16px bottom, and zero the following element's top margin). Should mention accessible touch targets and focus-visible if relevant. Framework-agnostic CSS values.",
+      "assertions": [
+        "Recommends body 18-19px with 1.7-1.85 line-height",
+        "Caps the measure to ~66-75 characters / ~68-72ch",
+        "Reduces the ~900px column toward 700-740px for prose",
+        "Identifies the heading margin-collapse trap",
+        "Gives asymmetric heading margins (more above than below) and zeros the next element's top",
+        "Provides concrete, framework-agnostic CSS values"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Rewrite the headline and hero copy on my pricing landing page to convert better.",
+      "expected_output": "Should recognize this is conversion copy for a landing/pricing page, NOT long-form article optimization. Should defer to or cross-reference the copywriting skill (and pricing for packaging). Should not apply blog-article structure (TOC, reading progress, content blocks) to a landing page. May offer brief scope clarification but hands off to the right skill.",
+      "assertions": [
+        "Recognizes this as landing-page conversion copy, not article optimization",
+        "Defers to / cross-references the copywriting skill",
+        "Does not apply long-form article patterns to a landing page"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Build the single blog-post template for my site so articles read premium and rank. What should it include?",
+      "expected_output": "Should lay out the article-page anatomy: breadcrumb (with BreadcrumbList schema), title block with category + updated date, byline with a real named author + share, hero with caption, long-form body with the readability spec, a sticky 'On this page' TOC with scrollspy (prefer a scroll-position calc over a raw IntersectionObserver band) plus a collapsible mobile TOC, reading-progress bar tied to the article body, back-to-top, related/prev-next, and Article + Organization/WebSite JSON-LD. Should emphasize real author attribution and real images (E-E-A-T), responsive tables (overflow-x), and accessibility (>=44px targets, focus-visible). Should reference schema for structured-data depth and copywriting for the prose itself.",
+      "assertions": [
+        "Describes the full single-post anatomy (breadcrumb, title, byline, hero, body, TOC, progress, related, schema)",
+        "Specifies a sticky TOC with scrollspy and a mobile collapsible TOC",
+        "Includes Article + BreadcrumbList + Organization/WebSite schema",
+        "Emphasizes real author attribution and real images for E-E-A-T",
+        "Covers responsive tables and accessibility (targets, focus-visible)",
+        "Cross-references schema and copywriting skills"
+      ],
+      "files": []
+    }
+  ]
+}
