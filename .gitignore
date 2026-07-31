@@ -28,3 +28,7 @@ skills-lock.json
 *~
 .idea/
 .vscode/
+
+# sync-upstream.py local state (not shared across machines)
+tools/.last-sync
+tools/.sync-blocked
