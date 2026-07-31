@@ -37,6 +37,15 @@ LAST_SYNC = REPO / "tools" / ".last-sync"
 BLOCKED = REPO / "tools" / ".sync-blocked"
 THROTTLE_SECONDS = 6 * 3600  # don't check more than once every 6 hours
 
+# On Windows, a bare "bash" can resolve to WSL's bash.exe (System32) instead of
+# Git Bash, and WSL's bash chokes on the repo's CRLF-checked-out shell scripts.
+# Pin to Git Bash explicitly to avoid that ambiguity.
+_GIT_BASH_CANDIDATES = [
+    r"C:\Program Files\Git\bin\bash.exe",
+    r"C:\Program Files\Git\usr\bin\bash.exe",
+]
+BASH = next((p for p in _GIT_BASH_CANDIDATES if Path(p).exists()), "bash")
+
 
 def run(cmd, cwd=REPO, check=True):
     result = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
@@ -66,17 +75,16 @@ def sync_fork():
     branch = manifest["branch"]
 
     run(["git", "fetch", remote])
-    local_sha = run(["git", "rev-parse", branch]).stdout.strip()
-    upstream_sha = run(["git", "rev-parse", f"{remote}/{branch}"]).stdout.strip()
-    if local_sha == upstream_sha:
-        log("fork: already up to date with upstream")
+    ahead_count = run(["git", "rev-list", "--count", f"HEAD..{remote}/{branch}"]).stdout.strip()
+    if ahead_count == "0":
+        log("fork: already up to date with upstream (or upstream is behind us, nothing to pull)")
         return False
 
     merge = run(["git", "merge", f"{remote}/{branch}", "--no-edit"], check=False)
     if merge.returncode != 0:
         run(["git", "merge", "--abort"], check=False)
         raise RuntimeError(f"fork merge conflict against {remote}/{branch}, aborted:\n{merge.stdout}\n{merge.stderr}")
-    log(f"fork: merged {remote}/{branch} ({local_sha[:7]} -> {upstream_sha[:7]})")
+    log(f"fork: merged {ahead_count} new commit(s) from {remote}/{branch}")
     return True
 
 
@@ -164,7 +172,7 @@ def main():
     if staged:
         run(["git", "commit", "-m", "chore: sync vendored skill(s) from upstream (auto)"])
 
-    validate = run(["bash", "validate-skills.sh"], check=False)
+    validate = run([BASH, "validate-skills.sh"], check=False)
     if validate.returncode != 0:
         BLOCKED.write_text(f"validate-skills.sh failed after sync:\n{validate.stdout}\n{validate.stderr}")
         log("validation FAILED after sync -- committed locally but NOT pushed, see .sync-blocked")

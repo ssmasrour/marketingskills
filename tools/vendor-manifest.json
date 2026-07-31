@@ -11,7 +11,7 @@
       "skill": "planning-with-files",
       "description": "Vendored from a separate repo (not part of the fork relationship) because it isn't part of marketingskills upstream.",
       "sourceUrl": "https://github.com/OthmanAdi/planning-with-files.git",
-      "branch": "main",
+      "branch": "master",
       "sourcePathInUpstream": "skills/planning-with-files",
       "localPath": "skills/planning-with-files",
       "preserveFiles": ["LICENSE", "NOTICE.md"]
