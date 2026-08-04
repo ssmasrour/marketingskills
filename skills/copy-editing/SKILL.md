@@ -441,6 +441,7 @@ Copy editing isn't just for new content. Existing pages decay over time — outd
 ## Related Skills
 
 - **copywriting**: For writing new copy from scratch (use this skill to edit after your first draft is complete)
+- **humanize-writing**: For a deeper AI-tell pass beyond copy — voice profiles, a 3-pass rewrite process, and rules for non-marketing text (LinkedIn, emails, blog drafts)
 - **cro**: For broader page optimization beyond copy
 - **marketing-psychology**: For understanding why certain edits improve conversion
 - **ab-testing**: For testing copy variations
@@ -454,4 +455,5 @@ Copy editing isn't just for new content. Existing pages decay over time — outd
 | Writing new page copy from scratch | copywriting |
 | Reviewing and improving existing copy | copy-editing (this skill) |
 | Editing copy you just wrote | copy-editing (this skill) |
+| "This still sounds like AI" after editing, or non-marketing text (LinkedIn, email, blog) | humanize-writing |
 | Structural or strategic page changes | cro |

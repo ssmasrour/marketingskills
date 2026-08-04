@@ -78,6 +78,7 @@ See each skill's **Related Skills** section for the full dependency map.
 | [directory-submissions](skills/directory-submissions/) | When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for... |
 | [emails](skills/emails/) | When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email... |
 | [free-tools](skills/free-tools/) | When the user wants to plan, evaluate, or build a free tool for marketing purposes — lead generation, SEO value, or... |
+| [humanize-writing](skills/humanize-writing/) | Rewrite or review any text (not just marketing copy — LinkedIn, blog drafts, emails) to eliminate AI writing patterns via a 3-pass process and voice profiles. Vendored from [lguz/humanize-writing-skill](https://github.com/lguz/humanize-writing-skill) (MIT, © Luis Guzman) — see NOTICE.md. |
 | [image](skills/image/) | When the user wants to create, generate, edit, or optimize images for marketing — blog heroes, social graphics, product... |
 | [influencer-marketing](skills/influencer-marketing/) | When the user wants to run influencer, creator, or ambassador partnerships to promote their product — finding and... |
 | [launch](skills/launch/) | When the user wants to plan a product launch, feature announcement, or release strategy. Also use when the user... |

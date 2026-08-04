@@ -15,6 +15,15 @@
       "sourcePathInUpstream": "skills/planning-with-files",
       "localPath": "skills/planning-with-files",
       "preserveFiles": ["LICENSE", "NOTICE.md"]
+    },
+    {
+      "skill": "humanize-writing",
+      "description": "Vendored from a separate repo (not part of the fork relationship) because it isn't part of marketingskills upstream.",
+      "sourceUrl": "https://github.com/lguz/humanize-writing-skill.git",
+      "branch": "main",
+      "sourcePathInUpstream": "skills/humanize-writing",
+      "localPath": "skills/humanize-writing",
+      "preserveFiles": ["LICENSE", "NOTICE.md"]
     }
   ]
 }
