@@ -79,6 +79,50 @@ Each section should advance one argument. Build a logical flow down the page.
 
 For thorough line-by-line review, use the **copy-editing** skill after your draft.
 
+### Avoid AI-Writing Tells
+
+Marketing copy is the hardest genre to keep clean of these, for two reasons documented in Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing):
+
+- **LLMs drift toward advertising language by default** — even when told to write neutrally. Other genres get a warning signal when the prose turns salesy. This one doesn't; the tells arrive disguised as the thing you meant to write.
+- **The core failure is vaguer and louder at once.** Models regress to average phrasing, so specifics dissolve into praise: "inventor of the first train-coupling device" becomes "a revolutionary titan of industry." That is the same failure as weak copy — so **Specificity Over Vagueness above is the primary defense.** Copy that passes the specificity test usually passes this one.
+
+**1. Negative parallelism** — the most recognizable AI cadence. Three forms, all defining the product by what it isn't:
+> "It's not just X, it's Y" · "It's not X, it's Y" / "no fluff, no filler, just results" · "X rather than Y"
+>
+> ❌ It's not just a cabinet — it's a statement.  ✅ It's a cabinet built to your exact size.
+
+**2. Superficial "-ing" analysis** tacked onto a sentence end, adding comment but no information:
+> ❌ We deliver within 24 hours, *ensuring a seamless experience and fostering loyalty.*  ✅ We deliver within 24 hours. Order by 9am and it ships the same day.
+>
+> Test: delete everything after the comma. If nothing was lost, it was ornament.
+
+**3. Puffery about significance.** State the consequence; don't announce that something matters.
+> ❌ In today's evolving kitchen landscape, cabinetry plays a pivotal role.  ✅ The right cabinets make a small kitchen usable.
+
+**4. Say "is."** Models systematically avoid plain *is/are*. Watch *serves as, stands as, functions as, represents, refers to* — **and especially the marketing verbs *boasts, features, offers, maintains*,** which slip through because they read as normal product copy.
+> ❌ Our warehouse *boasts* 2,000 m² and *features* climate control.  ✅ Our warehouse is 2,000 m², climate controlled.
+
+**5. One name per thing.** Models carry a repetition penalty, so they rename the same referent constantly — the product becomes "the platform," "the solution," "this powerful tool." Pick one noun for the product, one for the customer, one for the action, and repeat them. Repetition reads as confidence.
+
+**6. Rule-of-three overuse.** Models use triads to make thin analysis look thorough. One per page is fine; three is a signature. Write two items when there are two. Cut any third that exists only for rhythm.
+
+**7. Vague attribution.** Name a real, checkable source or drop the claim: *Studies show… · Experts agree… · Industry reports suggest…* Also watch inflated consensus — "publications such as X and Y" when X and Y are the only two.
+
+**8. Formulaic conclusions.** No "In summary,"/"Ultimately," wrap-ups; no "Despite its strengths, [product] faces challenges…" arc. End on the CTA or a concrete detail. (Discussing real limits is good copy — it's the template that's the tell.)
+
+**9. Vocabulary — density is the signal, not any single word.** Highest priority, the current-era four: ***emphasizing, enhance, highlighting, showcasing***. Then: *delve, tapestry, testament, underscore, showcase, boasts, robust, pivotal, crucial, garner, fostering, intricate, meticulous, vibrant, landscape* (abstract), *bolstered, interplay, enduring, align with, valuable, key* (as adjective), *Additionally* (starting a sentence), *nestled, in the heart of, renowned, groundbreaking, diverse array*.
+> Read this list **literally** — a flagged word does not imply its synonyms are flagged (*showcase* is a tell; *show* is not), and context decides (*underscore* the verb, not the mark). One or two is coincidence; several together is the tell.
+
+**10. Formatting.** Avoid the canned LLM list shape — bullet, **bold header**, colon, description. Don't bold mechanically (bold should be scarce enough to still mean something). Sentence case in headings. Emoji-as-bullets: cut. Em dashes are fine and often good — the actual tells are *spaced* em dashes, pile-ups, and using one to prop up a negative parallelism. Before delivering, **search the draft for `[`** to catch unfilled placeholders like `[Your Name]`.
+
+**Non-English copy:** rules 1–8 and 10 are structural and survive translation. Rule 9's word list is English-specific — don't translate it; build the equivalent sense from that language's own overused register.
+
+**Don't over-correct.** These are probabilistic signals, not grammar rules; all of them appear in good human writing occasionally. Clustering is the signal. If a flagged construction is genuinely the clearest way to say the thing, keep it.
+
+**Self-check:** read it aloud. If a sentence sounds like a brochure or a LinkedIn post rather than one person talking to another, rewrite it plainer and more specific.
+
+**For the full treatment** — strong vs. weak tells, the research behind each, worked examples, and a 10-step revision pass: see [references/ai-writing-tells.md](references/ai-writing-tells.md)
+
 ---
 
 ## Best Practices
