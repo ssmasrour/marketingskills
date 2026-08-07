@@ -123,6 +123,10 @@ Marketing copy is the hardest genre to keep clean of these, for two reasons docu
 
 **For the full treatment** — strong vs. weak tells, the research behind each, worked examples, and a 10-step revision pass: see [references/ai-writing-tells.md](references/ai-writing-tells.md)
 
+**Non-English: no em dashes.** Em dashes (—) are a Latin-script punctuation mark. In Farsi, Arabic, and other RTL scripts they read as foreign — a tell that the text was machine-translated from English. Replace with comma, period, sentence break, or colon. This overrides the general permissiveness toward em dashes in the vocabulary rules above when writing in non-Latin scripts.
+
+**Product titles: numbers need units.** A bare digit in a title is ambiguous — "مدل ۱۰۰۰" could mean 1000ml, 1000g, or a model number. Always attach the unit word: لیتری, میلی‌لیتری, سانتی‌متری, عددی, کیلوگرمی. Model numbers that are genuinely identifiers ("T1", "H3") are exempt because context distinguishes them from measurements. This applies to product names, variants, and SKU titles.
+
 ---
 
 ## Best Practices
