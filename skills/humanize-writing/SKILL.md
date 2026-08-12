@@ -1,6 +1,10 @@
 ---
 name: humanize-writing
-description: "Use when the user wants text to sound more human, says writing sounds \"too AI\" or \"too ChatGPT,\" asks to humanize or rewrite a draft to feel natural, or shares content wanting it to feel authentic and less robotic. Also applies to LinkedIn posts, blog drafts, or emails where the user wants a more genuine voice — not limited to marketing copy. For writing new marketing copy from scratch, see copywriting. For polishing/proofreading existing marketing copy without a full voice rewrite, see copy-editing."
+description: >
+  Use when the user wants text to sound more human, says writing sounds "too AI"
+  or "too ChatGPT," asks to humanize or rewrite a draft to feel natural, or shares
+  content wanting it to feel authentic and less robotic. Also applies to LinkedIn
+  posts, blog drafts, or emails where the user wants a more genuine voice.
 ---
 
 # Humanize Writing
